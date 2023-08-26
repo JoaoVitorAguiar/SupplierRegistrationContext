@@ -15,7 +15,7 @@ public class Supplier
     public string Name { get; set; }
 
     [Required]
-    public int CNPJ { get; set; }
+    public long CNPJ { get; set; }
 
     [Required]
     public int CEP { get; set; }

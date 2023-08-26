@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SupplierRegistrationContext.Data;
 
@@ -10,9 +11,11 @@ using SupplierRegistrationContext.Data;
 namespace SupplierRegistrationContext.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20230826125720_LongIntInCnpj")]
+    partial class LongIntInCnpj
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,11 +55,11 @@ namespace SupplierRegistrationContext.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<int>("CEP")
-                        .HasColumnType("int");
-
-                    b.Property<long>("CNPJ")
+                    b.Property<long>("CEP")
                         .HasColumnType("bigint");
+
+                    b.Property<int>("CNPJ")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
