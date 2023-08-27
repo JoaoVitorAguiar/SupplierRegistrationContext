@@ -20,6 +20,9 @@
             <th>
                Endereço
             </th>
+            <th>
+               Especialidade
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -38,6 +41,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Specialty.Name)
+            </td>
+
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Detalhes</a> |

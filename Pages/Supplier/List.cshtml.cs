@@ -25,7 +25,7 @@ namespace SupplierRegistrationContext.Pages.Supplier
         {
             if (_context.Suppliers != null)
             {
-                Supplier = await _context.Suppliers.ToListAsync();
+                Supplier = await _context.Suppliers.Include(x => x.Specialty).ToListAsync();
             }
         }
     }
