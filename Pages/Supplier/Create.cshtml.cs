@@ -62,7 +62,7 @@ namespace SupplierRegistrationContext.Pages.Supplier
             _context.Suppliers.Add(supplier);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("../Index");
+            return RedirectToPage("./List");
         }
     }
 }
