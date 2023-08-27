@@ -1,23 +1,24 @@
 ﻿@page
 @model SupplierRegistrationContext.Pages.Supplier.ListModel
 
+<h4>Fornecedores</h4>
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Cadastrar fornecedor</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Supplier[0].Name)
+                Nome
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Supplier[0].CNPJ)
+               CNPJ
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Supplier[0].CEP)
+                CEP
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Supplier[0].Address)
+               Endereço
             </th>
             <th></th>
         </tr>
@@ -38,9 +39,9 @@
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Excluir</a>
             </td>
         </tr>
 }
