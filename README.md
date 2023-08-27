@@ -1,6 +1,8 @@
 # Sistema de Cadastro de Fornecedores
 
 Este projeto consiste em um Sistema de Cadastro de Fornecedores que permite aos usuários realizar operações básicas de CRUD em registros de fornecedores. O sistema é construído utilizando várias tecnologias, conforme especificado abaixo.
+##
+<img src="[https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif](https://github.com/JoaoVitorAguiar/SupplierRegistrationContext/blob/main/Cadastro-fornecedores-VitorTech-%E2%80%90-Feito-com-o-Clipchamp.gif)" width="500" height="500" />
 
 ## Tecnologias Utilizadas
 
