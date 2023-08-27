@@ -16,7 +16,7 @@
             <div class="form-group">
                 <label asp-for="SupplierViewModel.CNPJ" class="control-label"></label>
                 <input class="form-control" type="text" id="cnpj" onkeyup="formataValorCnpj(this)"
-                       onpaste="TrataPaste(this, event, 'cnpj')" maxlength=15 asp-for="SupplierViewModel.CNPJ" class="form-control" />
+                       onpaste="TrataPaste(this, event, 'cnpj')" maxlength=18 asp-for="SupplierViewModel.CNPJ" class="form-control" />
                 <span asp-validation-for="SupplierViewModel.CNPJ" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -24,15 +24,17 @@
                 <input type="text" maxlength="9" onkeyup="handleZipCode(event)" asp-for="SupplierViewModel.CEP" class="form-control" />
                 <span asp-validation-for="SupplierViewModel.CEP" class="text-danger"></span>
             </div>
+            
             <div class="form-group">
-                <label asp-for="SupplierViewModel.Address" class="control-label"></label>
-                <input asp-for="SupplierViewModel.Address" class="form-control" />
-                <span asp-validation-for="SupplierViewModel.Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SupplierViewModel.Specialty" class="control-label">Especialidade</label>
-                <input asp-for="SupplierViewModel.Specialty" class="form-control" />
-                <span asp-validation-for="SupplierViewModel.Specialty" class="text-danger"></span>
+                <label asp-for="SelectedSpecialtyId" class="control-label">Especialidade</label>
+                <select asp-for="SelectedSpecialtyId" class="form-control">
+                    @foreach (var specialty in Model.Specialties)
+                    {
+                        <option value="@specialty.Id">@specialty.Name</option>
+                    }
+                </select>
+
+                <span asp-validation-for="SelectedSpecialtyId" class="text-danger"></span>
             </div>
             <br />
             <div class="form-group">

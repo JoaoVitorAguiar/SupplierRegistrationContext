@@ -16,10 +16,4 @@ public class RegisterSupplierViewModel
     [Required]
     public string CEP { get; set; }
 
-    [Required]
-    [StringLength(255)]
-    public string Address { get; set; }
-
-    [Required]
-    public string Specialty { get; set; }
 }
