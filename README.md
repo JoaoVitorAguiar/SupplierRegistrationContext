@@ -10,7 +10,7 @@ Este projeto consiste em um Sistema de Cadastro de Fornecedores que permite aos 
 
 - Visual Studio 2022 Community
 - SQL Server Express ou MySQL
-- ASP.NET Core MVC ou ASP.NET Core Razor Pages
+- ASP.NET Core Razor Pages
 - Entity Framework
 - HTML, Bootstrap e CSS para desenvolvimento e estilização do front-end
 
