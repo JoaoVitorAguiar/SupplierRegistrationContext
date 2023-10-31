@@ -1,12 +1,16 @@
 # Sistema de Cadastro de Fornecedores
 
 Este projeto consiste em um Sistema de Cadastro de Fornecedores que permite aos usuários realizar operações básicas de CRUD em registros de fornecedores. O sistema é construído utilizando várias tecnologias, conforme especificado abaixo.
+##
+<p align="center">
+  <img src="https://github.com/JoaoVitorAguiar/SupplierRegistrationContext/blob/main/Cadastro-fornecedores-VitorTech-%E2%80%90-Feito-com-o-Clipchamp.gif" width="700" />
+</p>
 
 ## Tecnologias Utilizadas
 
 - Visual Studio 2022 Community
 - SQL Server Express ou MySQL
-- ASP.NET Core MVC ou ASP.NET Core Razor Pages
+- ASP.NET Core Razor Pages
 - Entity Framework
 - HTML, Bootstrap e CSS para desenvolvimento e estilização do front-end
 
