@@ -2,7 +2,6 @@
 
 using SupplierRegistrationContext.ViewModels;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 public static class AddressFromCep
 {
@@ -14,7 +13,8 @@ public static class AddressFromCep
         resposta.EnsureSuccessStatusCode();
 
         var jsonString = await resposta.Content.ReadAsStringAsync();
-        var address = JsonSerializer.Deserialize<AddressFromCepViewModel>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        var address = JsonSerializer.Deserialize<AddressFromCepViewModel>(
+            jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
         return address.ToString();
     }
 }
